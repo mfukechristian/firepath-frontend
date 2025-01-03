@@ -3,18 +3,26 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import HomePage from "./pages/HomePage";
+import TouristVisaPage from "./pages/TouristVisaPage";
+import WorkVisaPage from "./pages/WorkVisaPage";
+import StudyVisaPage from "./pages/StudyVisaPage";
+import PermanentResidencyPage from "./pages/PermanentResidencyPage";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
 } from "react-router-dom";
-import HomePage from "./pages/HomePage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index={true} path="/" element={<HomePage />} />
+      <Route index element={<HomePage />} />
+      <Route path="/tourist-visa" element={<TouristVisaPage />} />
+      <Route path="/work-visa" element={<WorkVisaPage />} />
+      <Route path="/study-visa" element={<StudyVisaPage />} />
+      <Route path="/permanent-residency" element={<PermanentResidencyPage />} />
     </Route>
   )
 );

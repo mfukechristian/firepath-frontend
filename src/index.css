@@ -35,3 +35,13 @@ h6 {
   text-decoration: none;
   font-family: "Inter", sans-serif;
 }
+
+.hover-card {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hover-card:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
