@@ -45,3 +45,16 @@ h6 {
   color: #fff;
   cursor: pointer;
 }
+
+.custom-select {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  border: 1px solid #000; /* Black border */
+}
+
+.custom-select:focus {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  border-color: #000; /* Black border */
+  box-shadow: none; /* Remove default blue shadow */
+}

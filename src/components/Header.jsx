@@ -10,7 +10,11 @@ function Header() {
       style={{ backgroundColor: "transparent", boxShadow: "none" }}
     >
       <Container>
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          style={{ display: "flex", alignItems: "center" }}
+        >
           <img
             src={logo}
             alt="Logo"
