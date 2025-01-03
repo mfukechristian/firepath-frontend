@@ -30,3 +30,8 @@ h6 {
   font-weight: 700;
   color: #000;
 }
+
+.links-container {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
